@@ -21,7 +21,6 @@ const ProductsView: React.FC = async () => {
     return (<span>No se pudo obtener nada</span>)
   }
  
-
 }
 
 export default ProductsView

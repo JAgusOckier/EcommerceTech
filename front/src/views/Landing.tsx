@@ -18,10 +18,10 @@ const Landing: React.FC = () => {
             </div>
           </section>
     
-          <section className="py-8 bg-custom-primary-2">
+          <section className="py-8  bg-custom-primary-2">
             <div className="container mx-auto text-center">
               <h2 className="text-3xl font-bold mb-8">Nuestros productos destacados</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="w-4/5 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-custom-secondary p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                   <h4 className="text-xl font-semibold mb-2 text-gray-950">Smartphones</h4>
                   <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/2501/gallery/ar-galaxy-s25-s931-534316-sm-s931blbvaro-thumb-544696142?$492_492_PNG$" alt="Smartphone" className="mx-auto mb-4" />
