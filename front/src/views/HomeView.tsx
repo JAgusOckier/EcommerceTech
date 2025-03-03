@@ -15,7 +15,7 @@ const HomeView = async () => {
     }
     return (
         <div>
-            <section className="h-[70vh] w-[100vw] flex flex-col items-center justify-center relative">
+            <section className="h-[70vh] w-full flex flex-col items-center justify-center relative">
                 <img src="/baner.png" alt="Banner" className="w-full h-full object-fill" />
                 <Link href={routes.products} className='absolute mb-4 bottom-0'>
                     <button className=' bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded hover:bg-gray-400 w-fit'>Explorar mas</button>
