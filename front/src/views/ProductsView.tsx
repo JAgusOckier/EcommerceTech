@@ -6,17 +6,22 @@ import { Suspense } from "react"
 
 
 const ProductsView: React.FC = async () => {
-  const categories = await getCategories()
-  const products = await getProducts();
-  return (
-    <div>
+  try {
+    const categories = await getCategories()
+    const products = await getProducts();
+    
+    return ( <div>
       <Suspense>
         <CategoryFilter categories={categories} />
         <AllProducts products={products} />
       </Suspense>
-    </div>
+    </div>)
+  } catch (error) {
+    console.warn(error)
+    return (<span>No se pudo obtener nada</span>)
+  }
+ 
 
-  )
 }
 
 export default ProductsView
