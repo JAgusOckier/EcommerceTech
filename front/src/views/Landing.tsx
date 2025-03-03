@@ -18,8 +18,8 @@ const Landing: React.FC = () => {
             </div>
           </section>
     
-          <section className="py-8  bg-custom-primary-2">
-            <div className="container mx-auto text-center">
+          <section className="py-8 bg-custom-primary-2">
+            <div className="flex items-center flex-col mx-auto text-center">
               <h2 className="text-3xl font-bold mb-8">Nuestros productos destacados</h2>
               <div className="w-4/5 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-custom-secondary p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">

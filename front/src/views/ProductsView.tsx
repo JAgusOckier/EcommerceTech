@@ -9,18 +9,18 @@ const ProductsView: React.FC = async () => {
   try {
     const categories = await getCategories()
     const products = await getProducts();
-    
-    return ( <div>
-      <Suspense>
-        <CategoryFilter categories={categories} />
-        <AllProducts products={products} />
-      </Suspense>
-    </div>)
+    return (
+      <div>
+        <Suspense>
+          <CategoryFilter categories={categories} />
+          <AllProducts products={products} />
+        </Suspense>
+      </div>
+    )
   } catch (error) {
     console.warn(error)
-    return (<span>No se pudo obtener nada</span>)
+    return (<span className="text-center">No se pudo obtener los productos</span>)
   }
- 
 }
 
 export default ProductsView
