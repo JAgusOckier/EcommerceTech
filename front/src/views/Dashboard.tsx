@@ -24,7 +24,7 @@ const Dashboard = () => {
 
 
     return (
-        <div className='w-screen flex gap-3 mb-4'>
+        <div className='w-full flex gap-3 mb-4'>
             <div className="w-1/4 h-fit flex flex-col gap-3 p-6 bg-custom-primary-2 rounded-lg m-4">
                 <h2 className="text-xl font-bold text-gray-800 border-b border-gray-900 pb-2">Datos Personales:</h2>
                 <span className="text-gray-700 font-semibold">Nombre: <span className="font-normal">{user?.name}</span></span>

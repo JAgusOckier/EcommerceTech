@@ -59,14 +59,14 @@ const Login = () => {
     });
     return (
         <div>
-            <nav className="bg-gray-900 text-white w-screen py-4">
+            <nav className="bg-gray-900 text-white w-full py-4">
                 <div className="container mx-auto flex justify-center space-x-6">
                     <Link href={routes.home} className="text-white text-lg font-bold flex items-center gap-1">
                         <IoIosHome className='size-9' />
                     </Link>
                 </div>
             </nav>
-            <div className='flex h-screen w-screen'>
+            <div className='flex h-screen w-full'>
                 <div className='w-3/5 bg-custom-primary-2 flex items-center justify-center'>
                     <img src="https://cdn.qwenlm.ai/output/51c48882-a043-4c08-9354-bed3deeaa3d9/t2i/9faa6d3f-8e3b-4c9f-9fd8-65e06bac8097/0e298ad9-0519-41fe-8be5-57643070543e.png" alt="foto login"
                         className='w-[32rem] h-[32rem] rounded-full' />

@@ -6,7 +6,7 @@ import { FaLaptop } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-900 text-white w-screen py-4">
+        <nav className="bg-gray-900 text-white w-full py-4">
             <div className="mx-auto flex justify-center gap-8 relative items-center">
                 <Link href={routes.home} className="text-white text-lg font-bold flex items-center gap-1 justify-start">
                     <IoIosHome className="size-9"/>

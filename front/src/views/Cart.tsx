@@ -43,7 +43,7 @@ const Cart = () => {
   const totalPagar = cart?.reduce((sum, producto) => sum + producto.price, 0);
 
   return (
-    <div className='w-screen h-screen flex'>
+    <div className='w-full h-screen flex'>
       <section className='w-1/2 text-center bg-custom-primary-2 flex flex-col gap-2 p-2'>
         {cart?.length ? cart.map((item, idx) => {
           return <CartItem key={idx} {...item} quantity={1} onRemoveClick={onRemoveClick(item.id)} />
