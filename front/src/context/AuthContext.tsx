@@ -34,7 +34,7 @@ export const AuthProvider = ({children} : {children: ReactNode}) => {
 
     useEffect(()=>{
         const storage = JSON.parse(localStorage?.getItem("user") || "{}")
-        if (!storage) {
+        if (!storage.length) {
             setIsAuth(false)
             return};
         setUser(storage.user)
