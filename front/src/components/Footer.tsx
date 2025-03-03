@@ -17,7 +17,6 @@ export const Footer = () => {
                     <h3 className="text-lg font-bold">Enlaces Rapidos</h3>
                     <Link href={routes.home} className="text-sm hover:text-gray-400">Inicio</Link>
                     <Link href={routes.products} className="text-sm hover:text-gray-400">Productos</Link>
-                    <Link href={routes.dashboard} className="text-sm hover:text-gray-400">Mi Perfil</Link>
                 </div>
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center">
                     <p className="text-sm text-gray-400">&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>

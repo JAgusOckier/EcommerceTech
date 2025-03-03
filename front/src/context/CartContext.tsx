@@ -10,7 +10,7 @@ interface CartContextType {
     resetCart: () => void
 }
 
-const CartContext = createContext<CartContextType | undefined>(undefined) //ver si le puedo sacar el indefinido
+const CartContext = createContext<CartContextType | undefined>(undefined)
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
     const [cart, setCart] = useState<CartContextType['cart']>()
@@ -18,14 +18,14 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
     const addToCart = (product: IProduct) => {
         const productRepeat = cart?.some((p) => product.id === p.id)
-        if(!productRepeat) {
+        if (!productRepeat) {
             setCart((statePrev) => {
                 return [...statePrev || [], product]
             })
             setTotal((prevTotal) => prevTotal + 1)
-           
+
         } else {
-           throw new Error("No se pudo añadir el producto")
+            throw new Error("No se pudo añadir el producto")
         }
     }
 
@@ -37,10 +37,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         });
     };
     const resetCart = () => {
-        setTimeout(() => {
-            setCart([])
-            setTotal(0)
-        }, 3000)
+        setCart([])
+        setTotal(0)
     }
 
     useEffect(() => {
