@@ -3,7 +3,7 @@ import { IOrder } from "@/helpers/types"
 const Order: React.FC<Partial<IOrder>> = ({ id, status, date, products }) => {
      const totalOrder = products?.reduce((sum, producto) => sum + producto.price, 0);
     return (
-        <div className="w-96 h-fit bg-custom-secondary rounded-lg p-4 border border-gray-300 m-4">
+        <div className="w-full md:w-96 h-fit bg-custom-secondary rounded-lg p-4 border border-gray-300 m-auto md:m-4">
             <div className="flex justify-between items-center border-b pb-2 mb-2">
                 <h3 className="text-lg font-bold text-gray-800">Orden #{id}</h3>
                 <span className={status ==='approved' ? `text-green-600`: `text-red-600`}>{status?.toUpperCase()}</span>

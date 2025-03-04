@@ -15,39 +15,41 @@ const HomeView = async () => {
     }
     return (
         <div>
-            <section className="h-[70vh] w-full flex flex-col items-center justify-center relative">
-                <img src="/baner.png" alt="Banner" className="w-full h-full object-fill" />
-                <Link href={routes.products} className='absolute mb-4 bottom-0'>
+            <section className="md:h-[70vh] w-full flex flex-col items-center justify-center relative">
+                <img src="/baner.png" alt="Banner" className="w-full h-full md:object-fill object-contain" />
+                <Link href={routes.products} className='md:absolute my-4 md:mt-0 md:bottom-0'>
                     <button className=' bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded hover:bg-gray-400 w-fit'>Explorar mas</button>
                 </Link>
-                <p className='absolute w-2/6 left-4 top-32 text-left text-[3.5rem] text-pink-500 drop-shadow-lg rounded-md italic'>Lo ultimo y mejor del mercado</p>
-                <p className='absolute w-1/4 right-8 top-32 text-right text-[3.5rem] text-pink-500 drop-shadow-lg rounded-md italic'>Calidad Garantizada </p>
+                <p className='absolute w-2/6 left-4 top-32 text-left text-[3.5rem] text-pink-500 drop-shadow-lg rounded-md italic hidden lg:block'>Lo ultimo y mejor del mercado</p>
+                <p className='absolute w-1/4 right-8 top-32 text-right text-[3.5rem] text-pink-500 drop-shadow-lg rounded-md italic hidden lg:block'>Calidad Garantizada </p>
             </section>
 
             <section className='flex items-center justify-center gap-5 m-5'>
-                <div className='flex justify-center items-center p-3 bg-custom-primary-2 w-80 h-44 gap-4 rounded-md'>
-                    <img src="https://imgs.search.brave.com/JyNQf3RsPWUP6nK_WH4lcLwDHDxC0gbGIQ5NCSuAdI0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbGFwdG9wL2xh/cHRvcF9QTkc1OTA1/LnBuZw" alt="" className="h-40 w-40" />
+                <div className='flex flex-col md:flex-row justify-center items-center p-3 bg-custom-primary-2 w-80 h-44 gap-1 md:gap-4 rounded-md'>
+                    <img src="https://imgs.search.brave.com/JyNQf3RsPWUP6nK_WH4lcLwDHDxC0gbGIQ5NCSuAdI0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbGFwdG9wL2xh/cHRvcF9QTkc1OTA1/LnBuZw" alt="" 
+                    className="h-32 w-32 md:h-40 md:w-40 object-contain" />
                     <div className='text-right p-2 h-full w-full flex flex-col justify-between'>
-                        <div>
+                        <div className='hidden md:block'>
                             <h2 className='text-lg font-bold text-gray-800 mb-1'>Notebooks</h2>
                             <p className='text-sm text-gray-600'>Lo mejor del mercado</p>
                         </div>
-                        <Link href={routes.products}>
-                            <button className='self-end bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded hover:bg-gray-400 w-fit'>Ver mas</button>
+                        <Link href={routes.products} className='self-center md:self-end'>
+                            <button className=' bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded hover:bg-gray-400 w-fit'>Ver mas</button>
                         </Link>
                     </div>
                 </div>
-                <div className='flex justify-center items-center p-3 bg-custom-primary-2 w-80 h-44 gap-4 rounded-md'>
-                    <div className='text-left p-2 h-full w-full  flex flex-col justify-between'>
-                        <div>
+                <div className='flex flex-col-reverse md:flex-row justify-center items-center p-3 bg-custom-primary-2 w-80 h-44 gap-1 md:gap-4 rounded-md'>
+                    <div className='text-left p-2 h-full w-full flex flex-col justify-between '>
+                        <div className='hidden md:block'>
                             <h2 className='text-lg font-bold text-gray-800 mb-1'>Smartphones</h2>
                             <p className='text-sm text-gray-600'>Lo mas nuevo</p>
                         </div>
-                        <Link href={routes.products}>
+                        <Link href={routes.products} className='self-center md:self-start'>
                             <button className='bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded hover:bg-gray-400 w-fit'>Ver más</button>
                         </Link>
                     </div>
-                    <img src="https://tiendaonline.movistar.com.ar/media/catalog/product/cache/1d01ed3f1ecf95fcf479279f9ae509ad/s/2/s25-yellow-front.png" alt="" className="h-40 w-40" />
+                    <img src="https://tiendaonline.movistar.com.ar/media/catalog/product/cache/1d01ed3f1ecf95fcf479279f9ae509ad/s/2/s25-yellow-front.png" alt="" 
+                    className="h-24 w-32 md:h-40 md:w-40 object-contain" />
                 </div>
             </section>
             <section className='p-4'>

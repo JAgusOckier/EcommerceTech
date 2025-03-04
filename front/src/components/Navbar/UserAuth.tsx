@@ -48,7 +48,7 @@ const UserAuth = () => {
         )
     }
     return (
-        <div className='gap-6 flex absolute right-10'>
+        <div className='gap-6 flex md:absolute md:right-10'>
             <Link href={routes.login} className="text-white hover:text-blue-200 flex items-center" >Login</Link>
             <Link href={routes.register} className="text-white hover:text-blue-200 flex items-center" >Register</Link>
         </div>

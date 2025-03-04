@@ -67,12 +67,12 @@ const Login = () => {
                 </div>
             </nav>
             <div className='flex h-screen w-full'>
-                <div className='w-3/5 bg-custom-primary-2 flex items-center justify-center'>
+                <div className='hidden md:flex w-3/5 bg-custom-primary-2 items-center justify-center'>
                     <img src="https://cdn.qwenlm.ai/output/51c48882-a043-4c08-9354-bed3deeaa3d9/t2i/9faa6d3f-8e3b-4c9f-9fd8-65e06bac8097/0e298ad9-0519-41fe-8be5-57643070543e.png" alt="foto login"
                         className='w-[32rem] h-[32rem] rounded-full' />
                 </div>
-                <div className='w-2/5 bg-custom-primary flex items-center flex-col justify-center'>
-                    <form onSubmit={formik.handleSubmit} className='w-2/4 mx-auto mt-12 p-7 bg-gradient-to-b from-custom-primary-2 to-custom-primary-3  rounded-2xl shadow-md flex flex-col gap-4'>
+                <div className='w-full md:w-2/5  bg-custom-primary-3 md:bg-custom-primary flex flex-col md:items-center  md:justify-center'>
+                    <form onSubmit={formik.handleSubmit} className='w-full md:w-2/4 md:mx-auto md:mt-12 p-7 bg-gradient-to-b from-custom-primary-2 to-custom-primary-3 md:rounded-2xl shadow-md flex flex-col gap-4'>
                         <label htmlFor="email" className='font-bold text-lg text-black mb-1'>Correo Electronico: </label>
                         <input className='p-2 border border-gray-300 rounded-md text-black text-sm transition duration-300 focus:border-amber-300 focus:outline-none focus:shadow-md' id="email" type="email" {...formik.getFieldProps('email')} />
                         {formik.touched.email && formik.errors.email ? (
@@ -100,7 +100,7 @@ const Login = () => {
                     </form>
                     <div className='flex items-center flex-col gap-1 my-2'>
                         <span className='text-gray-900 text-lg'>¿No estas registrado?</span>
-                        <Link href={routes.register} className='text-blue-600 text-base'>Registrate Aqui</Link>
+                        <Link href={routes.register} className='text-gray-300 md:text-blue-600 text-base'>Registrate Aqui</Link>
                     </div>
                 </div>
             </div>

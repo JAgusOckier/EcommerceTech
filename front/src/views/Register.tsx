@@ -74,14 +74,14 @@ const Register = () => {
 
 
             <div className='flex h-min-screen h-fit w-full'>
-                <div className='w-3/5 bg-custom-primary-2 flex items-center justify-center'>
+                <div className='hidden md:flex w-3/5 bg-custom-primary-2 items-center justify-center'>
                     <img src="https://cdn.qwenlm.ai/output/51c48882-a043-4c08-9354-bed3deeaa3d9/t2i/9faa6d3f-8e3b-4c9f-9fd8-65e06bac8097/0e298ad9-0519-41fe-8be5-57643070543e.png" alt="foto login"
                         className='w-[32rem] h-[32rem] rounded-full' />
                 </div>
-                <div className='w-2/5 bg-custom-primary flex items-center justify-center flex-col'>
+                <div className='w-full md:w-2/5  bg-custom-primary-3 md:bg-custom-primary flex flex-col md:items-center  md:justify-center'>
                     <form
                         onSubmit={formik.handleSubmit}
-                        className="w-2/3 mx-auto mt-12 p-7 bg-gradient-to-b from-custom-primary-2 to-custom-primary-3 rounded-2xl shadow-md flex flex-col gap-4"
+                        className="w-full md:w-2/3 md:mx-auto md:mt-12 p-7 bg-gradient-to-b from-custom-primary-2 to-custom-primary-3 md:rounded-2xl shadow-md flex flex-col gap-4"
                     >
                         <label htmlFor="name" className="font-bold text-lg text-black mb-1">Nombre Completo:</label>
                         <input
@@ -160,7 +160,7 @@ const Register = () => {
                     </form>
                     <div className='flex items-center flex-col gap-1 my-2'>
                         <span className='text-gray-900 text-lg'>¿Ya tenes cuenta?</span>
-                        <Link href={routes.login} className='text-blue-600 text-base'>Inicia sesion Aqui</Link>
+                        <Link href={routes.login} className='text-gray-300 md:text-blue-600  text-base'>Inicia sesion Aqui</Link>
                     </div>
                 </div>
             </div>

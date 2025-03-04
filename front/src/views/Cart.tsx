@@ -43,8 +43,8 @@ const Cart = () => {
   const totalPagar = cart?.reduce((sum, producto) => sum + producto.price, 0);
 
   return (
-    <div className='w-full h-screen flex'>
-      <section className='w-1/2 text-center bg-custom-primary-2 flex flex-col gap-2 p-2'>
+    <div className='w-full h-min-screen  flex flex-col md:flex-row'>
+      <section className='w-full md:min-h-screen h-fit md:w-1/2 text-center bg-custom-primary-2 flex flex-col gap-2 p-2'>
         {cart?.length ? cart.map((item, idx) => {
           return <CartItem key={idx} {...item} quantity={1} onRemoveClick={onRemoveClick(item.id)} />
         })
@@ -54,7 +54,7 @@ const Cart = () => {
               className='w-72 h-72'/>
             </div>}
       </section>
-      <section className='w-1/2 flex flex-col items-center justify-start bg-green-100 flex flex-col gap-2 p-2'>
+      <section className='md:min-h-screen md:w-1/2 flex flex-col items-center justify-start bg-green-100 gap-2 p-2'>
         <img src="https://imgs.search.brave.com/UPo8bJgxL4UddJZsjDXm4k6hKpEl8-arBlyQqJvo1Qo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNC8wOC8zNi9z/aG9wcGluZy00Njk0/NDcwXzY0MC5qcGc" alt="foto decorativa"
           className='w-96 h-96 rounded-full' />
         <div className='flex flex-col gap-1 text-gray-900'>

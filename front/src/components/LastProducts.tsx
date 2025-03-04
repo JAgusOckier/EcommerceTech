@@ -13,7 +13,7 @@ const LastProducts: React.FC<{products: IProduct[]}> = ({products}) => {
     }
 
     return (
-        <div className="m-auto flex justify-center w-5/6 flex-wrap my-4">
+        <div className="m-auto flex justify-center w-5/6 flex-wrap my-1 md:my-4">
             {products.length ? products.map((product) => {
                 const { name, image, id } = product;
                 return <MiniCard key={product.id} name={name} image={image} 

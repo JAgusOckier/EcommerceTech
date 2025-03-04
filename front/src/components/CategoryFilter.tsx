@@ -35,7 +35,7 @@ const CategoryFilter: React.FC<{categories: ICategory[]}> = ({categories}) => {
     },[currentCategory])
    
     return (
-        <div className='flex gap-3 items-center my-2 justify-center'>
+        <div className='flex flex-wrap gap-3 items-center my-2 justify-center'>
             {categories.map((category) => {
                 return (<button className="p-2 text-gray-900 bg-blue-400 rounded-full hover:bg-blue-600 transition-all" 
                     key={category.id} onClick={()=>setCategory(category.id)}>{category.name}</button>)
