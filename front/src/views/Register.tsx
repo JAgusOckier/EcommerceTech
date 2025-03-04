@@ -26,7 +26,7 @@ const Register = () => {
         },
         validationSchema: Yup.object({
             name: Yup.string()
-                .max(25, 'Demasiado largo!')
+                .max(50, 'Demasiado largo!')
                 .required('Este campo es obligatorio'),
             email: Yup.string()
                 .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, 'Email invalido')
@@ -39,7 +39,7 @@ const Register = () => {
                 .matches(/[\W_]/, 'Debe contener al menos un caracter especial')
                 .required('Este campo es obligatorio'),
             address: Yup.string()
-                .max(25, 'Demasiado largo!')
+                .max(50, 'Demasiado largo!')
                 .required('Este campo es obligatorio'),
             phone: Yup.string()
                 .matches(/^\+?[0-9\s\-()]{8,17}$/, 'Numero de telefono invalido')
@@ -73,7 +73,7 @@ const Register = () => {
             </nav>
 
 
-            <div className='flex h-screen w-full'>
+            <div className='flex h-min-screen h-fit w-full'>
                 <div className='w-3/5 bg-custom-primary-2 flex items-center justify-center'>
                     <img src="https://cdn.qwenlm.ai/output/51c48882-a043-4c08-9354-bed3deeaa3d9/t2i/9faa6d3f-8e3b-4c9f-9fd8-65e06bac8097/0e298ad9-0519-41fe-8be5-57643070543e.png" alt="foto login"
                         className='w-[32rem] h-[32rem] rounded-full' />
@@ -153,7 +153,7 @@ const Register = () => {
 
                         <button
                             type="submit"
-                            className="bg-slate-400 hover:bg-slate-500 text-white font-bold py-3 rounded-md cursor-pointer transition-all duration-300 mt-3"
+                            className="bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 rounded-md cursor-pointer transition-all duration-300 mt-3"
                         >
                             Enviar
                         </button>

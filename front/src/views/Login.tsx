@@ -96,7 +96,7 @@ const Login = () => {
                             <div className='text-red-600 font-bold text-sm mt-1'>{formik.errors.password}</div>
                         ) : null}
 
-                        <button type="submit" className='bg-slate-400 hover:bg-slat e-500  text-white font-bold py-3 rounded-md cursor-pointer transition-all duration-300 mt-3'>Enviar</button>
+                        <button type="submit" className='bg-gray-400 hover:bg-gray-500  text-white font-bold py-3 rounded-md cursor-pointer transition-all duration-300 mt-3'>Enviar</button>
                     </form>
                     <div className='flex items-center flex-col gap-1 my-2'>
                         <span className='text-gray-900 text-lg'>¿No estas registrado?</span>

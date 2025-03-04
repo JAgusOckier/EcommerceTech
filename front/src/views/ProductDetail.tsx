@@ -1,7 +1,9 @@
 import ButtonAddCart from '@/components/ButtonAddCart';
+import ButtonBack from '@/components/ButtonBack';
 import { IProduct } from '@/helpers/types';
 
 const ProductDetail: React.FC<IProduct> = (product) => {
+  
   return (
     <div className='border-none m-auto rounded-xl gap-2 w-1/2 mt-4 p-4 bg-gradient-to-b from-custom-primary-2 to-custom-primary-3
     flex text-left'>
@@ -14,6 +16,9 @@ const ProductDetail: React.FC<IProduct> = (product) => {
         <span className="text-lg font-semibold ">Precio: ${product.price}</span>
         <span className="text-md mb-2">Stock: {product.stock}</span>
         <ButtonAddCart product={product} />
+      </div>
+      <div>
+        <ButtonBack />
       </div>
     </div>
   )
